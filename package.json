@@ -1,0 +1,25 @@
+{
+  "name": "vanilla-typescript",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript example starter project",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "yarn start && yarn cypress:open",
+    "cypress:open": "yarn run cypress open"
+  },
+  "dependencies": {
+    "cypress": "^4.12.1",
+    "eventemitter3": "4.0.4",
+    "jest": "26.2.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "typescript": "^3.9.7"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ]
+}
