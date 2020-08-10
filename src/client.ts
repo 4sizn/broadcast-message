@@ -26,6 +26,7 @@ class Client {
 
     this._subscriptions[topic] = new BroadcastChannel(topic);
     this._subscriptions[topic].onmessage = this._handleOnMessage.bind(this);
+    return this._subscriptions[topic];
   }
 
   _handleOnMessage(args: MessageEvent) {
